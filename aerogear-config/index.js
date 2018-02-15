@@ -12,5 +12,4 @@ var ConfigLib = function(config){
 
 
 // WIP - experiment
-// TypeScript support?
 module.exports = ConfigLib
