@@ -1,15 +1,13 @@
-
 var ConfigLib = function(config){
-    var serviceConfig;
+    this.serviceConfig;
     if(config && config.services){
         serviceConfig = config.services;
-    }
-    this.getKeycloakConfig = function(){
-        return serviceConfig.filter(config => config.type = 'keycloak');
     }
     return this;
 }
 
+ConfigLib.prototype.getKeycloakConfig = function(){
+        return serviceConfig.filter(config => config.type = 'keycloak');
+}
 
-// WIP - experiment
 module.exports = ConfigLib
